@@ -5,11 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Actitime 
 {
-	public static void main(String[] args) throws Throwable 
-	{
+	
+	@Test
+	public void test1_1() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

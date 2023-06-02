@@ -4,6 +4,7 @@ package Practiceprgm;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 import POMBankingGenerics.ExcelUtility;
 import POMBankingGenerics.FileUtility;
@@ -11,8 +12,8 @@ import POMBankingGenerics.WebDriverUtility;
 
 public class ActitimegenericExcel 
 {
-	public static void main(String[] args) throws Throwable
-	{
+	@Test
+	public void test_2() throws Throwable {
 		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
 		WebDriver driver ;
 		FileUtility futil = new FileUtility();

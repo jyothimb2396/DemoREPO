@@ -2,18 +2,20 @@ package Practiceprgm;
 
 
 import java.io.FileInputStream;
-
+import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class Actitimefrompropertyfile 
 {
-	public static void main(String[] args) throws Throwable 
-	{
+	
+	@Test
+	public void test_2() throws Throwable {
 
 		//fetch the property using only proprty file (no use of generic)
 		//System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
